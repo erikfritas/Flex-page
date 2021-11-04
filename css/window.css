@@ -1,0 +1,78 @@
+.window{
+    /* Colors */
+    background-image: linear-gradient(to bottom left, rgb(53, 53, 79), rgb(0, 0, 0));
+    color: aliceblue;
+
+    /* Sizes */
+    width: 80%;
+    height: 80%;
+    border-radius: 0px 0px 50px 50px;
+
+    /* Aligns */
+    position: fixed;
+    z-index: 0;
+    left: 10%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.window::before{
+    content: '';
+
+    /* Aligns */
+    position: absolute;
+    top: 0;
+    left: -10vw;
+    z-index: -4;
+
+    /* Sizes */
+    width: 100vw;
+    height: 100vh;
+
+    /* Colors */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.window .exit {
+    cursor: pointer;
+
+    /* Colors */
+    background-color: crimson;
+
+    /* Aligns */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    /* Sizes */
+    padding: 5px 10px;
+    border-bottom-left-radius: 15px;
+
+    /* Times */
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .25s;
+}
+
+.window .exit:hover{
+    /* Sizes */
+    padding: 15px 30px;
+}
+
+.window .text{
+    /* Sizes */
+    padding: 20px 50px;
+
+    /* Aligns */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.window .text .btn{
+    /* Aligns */
+    margin-top: 20px;
+}

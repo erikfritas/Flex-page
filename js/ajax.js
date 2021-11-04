@@ -15,12 +15,17 @@ const keys = [
 ]
 
 // substitui as keys uma por uma
-keys.map((file_name, ind) => {
-    $.ajax({
-        method: 'GET',
-        url: `./pages/${file_name}.html`
-    }).done((data)=>{
-        $('body').html(($('body').html()).replace(`{{${file_name}}}`, data))
-    })
-})
 
+for (let key in keys)
+    setTimeout(() => {
+        $.ajax({
+            type: 'GET',
+            url: `./pages/${keys[key]}.html`,
+            success: (data) => {
+                new_body = ($('body').html()).replace(`{{${keys[key]}}}`, data)
+                $('body').html(new_body)
+            }
+        })
+    }, 500)
+
+$('body').html(($('body').html()).replace('<script src="./js/ajax.js"></script>', ''))
