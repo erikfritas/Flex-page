@@ -1,0 +1,45 @@
+header{
+    /* Colors */
+    background-color: #122A57;
+    color: #fff;
+
+    /* Aligns */
+    display: flex;
+    justify-content: space-between;
+
+    /* Sizes */
+    padding: 0 10vw;
+}
+
+header .title{
+    /* Aligns */
+    display: flex;
+    align-items: center;
+}
+
+header .list-items{
+    /* Aligns */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-items li a{
+    /* Colors */
+    color: #fff;
+
+    /* Sizes */
+    padding: 30px 20px;
+    min-width: 100px;
+
+    /* Aligns */
+    display: flex;
+    align-items: center;
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.list-items li:hover a{
+    /* Colors */
+    background-color: rgba(240, 248, 255, 0.185);
+}

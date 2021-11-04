@@ -1,0 +1,77 @@
+*{
+    /* Aligns */
+    margin: 0;
+    padding: 0;
+
+    /* Fonts */
+    font-family: 'Open Sans', sans-serif;
+
+    /* Sizes */
+    box-sizing: border-box;
+}
+
+html, body{
+    /* Sizes */
+    height: 100%;
+
+    /* Scroll */
+    scroll-behavior: smooth;
+}
+
+::selection{
+    /* Colors */
+    background-color: rgb(9, 4, 49);
+    color: aliceblue;
+}
+
+ul{
+    /* Aligns */
+    list-style: none;
+    margin: 0;
+
+    /* Sizes */
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    /* Aligns */
+    display: flex;
+}
+
+.btn{
+    cursor: pointer;
+
+    /* Colors */
+    background-color: #122A57;
+    color: #fff;
+
+    /* Aligns */
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    
+    /* Sizes */
+    padding: 15px 40px;
+    border-radius: 30px;
+
+    /* Times */
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+
+*:hover > .btn{
+    /* Colors */
+    filter: drop-shadow(2px 2px 0px darkblue) drop-shadow(2px 2px 0px rgb(43, 43, 136));
+
+    /* Aligns */
+    transform: perspective(500px) scale3d(1, 1, 1) rotateX(6deg) rotateY(-6deg);
+}

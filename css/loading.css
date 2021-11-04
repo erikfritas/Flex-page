@@ -1,0 +1,57 @@
+.loading{
+    /* Colors */
+    background-image: linear-gradient(to top right, rgb(0, 136, 255), rgb(74, 255, 171));
+    color: aliceblue;
+
+    /* Sizes */
+    width: 100%;
+    height: 100%;
+
+    /* Aligns */
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    overflow: hidden;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes plane{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
+
+.plane{
+    /* Sizes */
+    width: auto;
+    height: 100%;
+
+    /* Aligns */
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+
+    /* Colors */
+    filter: drop-shadow(-5px -5px 0px red);
+
+    /* Animations */
+    animation: plane 5s linear infinite;
+    animation-delay: .8s;
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.plane:hover{
+    /* Colors */
+    filter: drop-shadow(50px 50px 0px red);
+}

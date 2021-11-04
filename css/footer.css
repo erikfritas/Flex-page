@@ -1,0 +1,22 @@
+footer{
+    /* Colors */
+    background-color: #122A57;
+    color: #fff;
+    
+    /* Sizes */
+    height: 70px;
+    
+    /* Aligns */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > .spacing {
+    /* Sizes */
+    width: 60%;
+
+    /* Aligns */
+    margin: auto;
+    justify-content: space-between;
+}

@@ -1,0 +1,146 @@
+#planos{
+    /* Aligns */
+    margin: auto;
+    flex-direction: column;
+
+    /* Sizes */
+    width: 75%;
+    min-height: 70vh;
+    padding-top: 50px;
+
+    /* Aligns */
+    margin-bottom: 50px;
+}
+
+#planos h2{
+    font-size: 32px;
+}
+
+.list-planos{
+    /* Aligns */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.item-plano{
+    /* Aligns */
+    flex: 1;
+    border: 5px solid #122A57;
+    border-radius: 10px 10px 250px 250px;
+
+    /* Sizes */
+    max-width: 240px;
+
+    /* Times */
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1) .5s;
+}
+
+.item-plano > .textbox{
+    /* Sizes */
+    padding: 20px 15px;
+}
+
+.item-plano .btn{
+    /* Aligns */
+    margin-bottom: 20px;
+
+    /* Sizes */
+    width: 100%;
+}
+
+.item-plano h3{
+    /* Sizes */
+    width: max-content;
+    padding: 0 32px;
+    font-size: 24px;
+    padding-bottom: 15px;
+
+    /* Aligns */
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: -20px;
+
+    /* Colors */
+    background-color: white;
+    border-bottom: 5px solid #122A57;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item-plano h3::before,
+.item-plano h3::after{
+    content: '';
+
+    /* Aligns */
+    position: absolute;
+    z-index: 3;
+
+    /* Sizes */
+    width: 20px;
+    height: 24px;
+
+    /* Colors */
+    background-color: white;
+    border-top: 5px solid #122A57;
+
+    /* Vars */
+    --y: translateY(15px);
+}
+
+.item-plano h3::before{
+    /* Aligns */
+    transform: translateX(-51px) var(--y);
+
+    /* Colors */
+    border-right: 5px solid #122A57;
+    border-top-right-radius: 8px;
+}
+
+.item-plano h3::after{
+    /* Aligns */
+    right: 0;
+    transform: translateX(18.5px) var(--y);
+
+    /* Colors */
+    border-left: 5px solid #122A57;
+    border-top-left-radius: 8px;
+}
+
+.item-plano ul{
+    /* Sizes */
+    padding: 10px 20px;
+
+    /* Aligns */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li{
+    /* Aligns */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    /* Sizes */
+    line-height: 30px;
+}
+
+.item-plano ul li::before{
+    content: "";
+
+    /* Sizes */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    /* Colors */
+    background-color: #122A57;
+
+    /* Aligns */
+    margin-right: 5px;
+}

@@ -1,0 +1,53 @@
+#quem-somos{
+    /* Aligns */
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 30px;
+
+    /* Sizes */
+    width: 80%;
+}
+
+#quem-somos img{
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+#quem-somos h2{
+    /* Sizes */
+    font-size: 32px;
+
+    /* Colors */
+    color: #122A57;
+
+    /* Aligns */
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+#quem-somos h2::before{
+    content: "";
+
+    /* Sizes */
+    height: 50px;
+    width: 5px;
+
+    /* Aligns */
+    margin-right: 5px;
+    position: relative;
+
+    /* Colors */
+    background-color: #122A57;
+}
+
+#quem-somos p{
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+#quem-somos img{
+    min-width: 420px;
+}

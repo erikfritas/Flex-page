@@ -1,0 +1,35 @@
+.apresentacao{
+    /* Sizes */
+    width: 80%;
+    height: 100vh;
+
+    /* Aligns */
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+
+.apresentacao h1{
+    /* Colors */
+    color: #122A57;
+
+    /* Sizes */
+    font-size: 48px;
+
+    /* Aligns */
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao p{
+    margin-bottom: 5px;
+}
+
+.apresentacao img{
+    /* Sizes */
+    width: 50%;
+    max-width: 550px;
+}
